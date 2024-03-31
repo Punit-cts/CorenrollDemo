@@ -44,6 +44,7 @@
 		49DBFB472BB95AF3001DEC7B /* MaterialLikeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBFB442BB95AF3001DEC7B /* MaterialLikeTextField.swift */; };
 		49DBFB482BB95AF3001DEC7B /* MaterialLikeTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49DBFB452BB95AF3001DEC7B /* MaterialLikeTextField.xib */; };
 		49DBFB4A2BB96100001DEC7B /* DeletableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBFB492BB96100001DEC7B /* DeletableTextField.swift */; };
+		49E9AC252BB9890900C1021B /* LoggedInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E9AC242BB9890900C1021B /* LoggedInViewController.storyboard */; };
 		49F311A72B355209007579D6 /* CustomPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F311A62B355209007579D6 /* CustomPasswordTextField.swift */; };
 		49F311A92B355227007579D6 /* CustomPasswordTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F311A82B355227007579D6 /* CustomPasswordTextField.xib */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,7 @@
 		49DBFB442BB95AF3001DEC7B /* MaterialLikeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLikeTextField.swift; sourceTree = "<group>"; };
 		49DBFB452BB95AF3001DEC7B /* MaterialLikeTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialLikeTextField.xib; sourceTree = "<group>"; };
 		49DBFB492BB96100001DEC7B /* DeletableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletableTextField.swift; sourceTree = "<group>"; };
+		49E9AC242BB9890900C1021B /* LoggedInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedInViewController.storyboard; sourceTree = "<group>"; };
 		49F311A62B355209007579D6 /* CustomPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordTextField.swift; sourceTree = "<group>"; };
 		49F311A82B355227007579D6 /* CustomPasswordTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPasswordTextField.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 			children = (
 				49076CDD2B27039E00EAD0C2 /* LoginScreenViewController.swift */,
 				49B466762B3065B8004253BD /* LoggedInViewController.swift */,
+				49E9AC242BB9890900C1021B /* LoggedInViewController.storyboard */,
 				49076CDF2B27039E00EAD0C2 /* Main.storyboard */,
 				49D575E42B2C1E9600FDD9AE /* CustomEmailTextField.swift */,
 				49D575E62B2C1ED000FDD9AE /* CustomEmailTextField.xib */,
@@ -212,10 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				49DBFB362BB95AE7001DEC7B /* UserSelectionViewController.swift */,
+				49DBFB3A2BB95AE7001DEC7B /* UserSelectionViewController.xib */,
 				49DBFB372BB95AE7001DEC7B /* UserChildSelectionView.swift */,
 				49DBFB382BB95AE7001DEC7B /* UserChildSelectionView.xib */,
 				49DBFB392BB95AE7001DEC7B /* UserParentSelectionView.swift */,
-				49DBFB3A2BB95AE7001DEC7B /* UserSelectionViewController.xib */,
 				49DBFB3B2BB95AE7001DEC7B /* UserParentSelectionView.xib */,
 			);
 			name = UserSelectionViews;
@@ -295,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E9AC252BB9890900C1021B /* LoggedInViewController.storyboard in Resources */,
 				49D575E72B2C1ED000FDD9AE /* CustomEmailTextField.xib in Resources */,
 				49076CE62B27039F00EAD0C2 /* LaunchScreen.storyboard in Resources */,
 				49DBFB402BB95AE7001DEC7B /* UserSelectionViewController.xib in Resources */,

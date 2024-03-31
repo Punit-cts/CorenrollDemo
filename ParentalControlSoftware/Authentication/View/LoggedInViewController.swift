@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoggedInViewController: UIViewController, OTPVerificationViewModelDelegate {
+class LoggedInViewController: UIViewController, OTPVerificationViewModelDelegate, UITextFieldDelegate {
     
     var otpModel: OTPVerificationViewModel!
     let loginviewcontroller = LoginScreenViewController()
@@ -20,28 +20,44 @@ class LoggedInViewController: UIViewController, OTPVerificationViewModelDelegate
         
         self.otpModel = OTPVerificationViewModel()
         self.otpModel.delegate = self
-        
+        self.otpTextField.delegate = self
         self.makeSpinnerforOTP()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == otpTextField, let text = textField.text,
+           let range = Range(range, in: text) {
+            let updatedText = text.replacingCharacters(in: range, with: string)
+            return updatedText.count <= 4
+        }
+        return true
     }
     
     @IBAction func verifyOTPButton(_ sender: UIButton) {
         
-        self.present(loadingOTPAlert, animated: true)
-        
-        if let email = self.loginviewcontroller.customTextView?.emailTextField?.text {
-            _ = OTPVerificationModel(email: email, user_type: "A", verification_code: self.otpTextField.text!, device_id: self.loginviewcontroller.generateDeviceID())
+        guard let enteredOTP = otpTextField.text, !enteredOTP.isEmpty else {
+            showAlert(message: "Please enter OTP")
+            return
         }
-        else {
-            print("Email is nil")
-        }
-
         
+        if enteredOTP == "1111" {
+            print("OTP verification successful")
+            loadingOTPAlert.dismiss(animated: true)
+        } else {
+            showAlert(message: "The OTP you entered is incorrect. Please try again.")
+        }
     }
     
     let loadingOTPAlert = UIAlertController(title: nil, message: "\n\nVerifying OTP", preferredStyle: .alert)
-    
+         
     private func makeSpinnerforOTP() {
-        
         let spinner = UIActivityIndicatorView(style: .medium)
         spinner.translatesAutoresizingMaskIntoConstraints = false
         spinner.startAnimating()
@@ -49,11 +65,9 @@ class LoggedInViewController: UIViewController, OTPVerificationViewModelDelegate
         loadingOTPAlert.view.addSubview(spinner)
         
         NSLayoutConstraint.activate([
-            
             spinner.centerXAnchor.constraint(equalTo: loadingOTPAlert.view.centerXAnchor),
             spinner.topAnchor.constraint(equalTo: loadingOTPAlert.view.topAnchor, constant: 30),
         ])
-        
     }
     
     func didVerifyOTP(){
@@ -75,6 +89,12 @@ class LoggedInViewController: UIViewController, OTPVerificationViewModelDelegate
         let failureOTPAlert = UIAlertController(title: "Verifying OTP Failed", message: nil, preferredStyle: .alert)
         failureOTPAlert.addAction(UIAlertAction(title: "Back", style: .default, handler: nil))
         present(failureOTPAlert, animated: true, completion: nil)
+    }
+    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 

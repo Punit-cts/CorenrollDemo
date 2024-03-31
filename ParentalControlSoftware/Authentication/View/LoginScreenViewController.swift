@@ -38,6 +38,11 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate, LoginVie
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
     
     @IBAction func loginButton(_ sender: Any) {
         
@@ -61,14 +66,6 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate, LoginVie
             loginFailed()
             
         }
-    }
-    
-    @IBAction func forgotPasswordButton(_ sender: Any) {
-        
-    }
-    
-    @IBAction func signUpButton(_ sender: Any) {
-        
     }
     
     let loadingAlert = UIAlertController(title: nil, message: "\n\nLogging In", preferredStyle: .alert)

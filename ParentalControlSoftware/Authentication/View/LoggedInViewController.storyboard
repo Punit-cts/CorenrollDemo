@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Logged In View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoggedInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LoggedInViewController" customModule="ParentalControlSoftware" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A six-numbered OTP will be delivered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnI-BH-ct4">
+                                <rect key="frame" x="22" y="204" width="304" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="uTL-oY-vso"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXi-b7-B3o">
+                                <rect key="frame" x="22" y="136" width="304" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="E7l-DX-bXK"/>
+                                    <constraint firstAttribute="width" constant="304" id="sQb-Jq-4WU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.12688566209999999" green="0.31438164229999999" blue="0.64497422680000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0G-9b-oAX">
+                                <rect key="frame" x="33" y="281" width="327" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="clE-qC-MPX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX0-9N-P0B">
+                                <rect key="frame" x="55" y="434" width="283" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Qor-Ay-Pg9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Verify OTP" subtitle="" cornerStyle="capsule"/>
+                                <connections>
+                                    <action selector="verifyOTPButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JNR-Kc-SbT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.81346767070000003" green="0.99063362880000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G0G-9b-oAX" secondAttribute="trailing" constant="33" id="7uB-4K-LoL"/>
+                            <constraint firstItem="ZX0-9N-P0B" firstAttribute="top" secondItem="G0G-9b-oAX" secondAttribute="bottom" constant="53" id="JVP-Ts-TpW"/>
+                            <constraint firstItem="BnI-BH-ct4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="22" id="YNV-lg-pdv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZX0-9N-P0B" secondAttribute="trailing" constant="55" id="cg5-QV-lxb"/>
+                            <constraint firstItem="G0G-9b-oAX" firstAttribute="top" secondItem="BnI-BH-ct4" secondAttribute="bottom" constant="60" id="dXa-bp-htm"/>
+                            <constraint firstItem="iXi-b7-B3o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="77" id="hhB-Tg-bWD"/>
+                            <constraint firstItem="G0G-9b-oAX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="33" id="i1E-n8-t3N"/>
+                            <constraint firstItem="ZX0-9N-P0B" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="55" id="ipP-xA-A8B"/>
+                            <constraint firstItem="iXi-b7-B3o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="22" id="nR5-u5-V6t"/>
+                            <constraint firstItem="BnI-BH-ct4" firstAttribute="top" secondItem="iXi-b7-B3o" secondAttribute="bottom" constant="24" id="zFg-qM-Kdh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="otpTextField" destination="G0G-9b-oAX" id="RXP-Vs-5lQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="-12"/>
+        </scene>
+    </scenes>
+</document>
