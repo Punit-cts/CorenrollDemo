@@ -43,6 +43,7 @@
 		49DBFB462BB95AF3001DEC7B /* PasswordTrailingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBFB432BB95AF3001DEC7B /* PasswordTrailingButton.swift */; };
 		49DBFB472BB95AF3001DEC7B /* MaterialLikeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBFB442BB95AF3001DEC7B /* MaterialLikeTextField.swift */; };
 		49DBFB482BB95AF3001DEC7B /* MaterialLikeTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49DBFB452BB95AF3001DEC7B /* MaterialLikeTextField.xib */; };
+		49DBFB4A2BB96100001DEC7B /* DeletableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBFB492BB96100001DEC7B /* DeletableTextField.swift */; };
 		49F311A72B355209007579D6 /* CustomPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F311A62B355209007579D6 /* CustomPasswordTextField.swift */; };
 		49F311A92B355227007579D6 /* CustomPasswordTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F311A82B355227007579D6 /* CustomPasswordTextField.xib */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		49DBFB432BB95AF3001DEC7B /* PasswordTrailingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTrailingButton.swift; sourceTree = "<group>"; };
 		49DBFB442BB95AF3001DEC7B /* MaterialLikeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLikeTextField.swift; sourceTree = "<group>"; };
 		49DBFB452BB95AF3001DEC7B /* MaterialLikeTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialLikeTextField.xib; sourceTree = "<group>"; };
+		49DBFB492BB96100001DEC7B /* DeletableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletableTextField.swift; sourceTree = "<group>"; };
 		49F311A62B355209007579D6 /* CustomPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordTextField.swift; sourceTree = "<group>"; };
 		49F311A82B355227007579D6 /* CustomPasswordTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPasswordTextField.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 				49DBFB292BB95AC4001DEC7B /* APIResponseModels.swift */,
 				49DBFB2A2BB95AC4001DEC7B /* Material+Extensions.swift */,
 				49DBFB2B2BB95AC4001DEC7B /* Bundle.swift */,
+				49DBFB492BB96100001DEC7B /* DeletableTextField.swift */,
 			);
 			name = Helpers;
 			path = ../../ParentalControl/ParentalControl/Helpers;
@@ -321,6 +324,7 @@
 				49076CF02B2703CE00EAD0C2 /* LoginModel.swift in Sources */,
 				49DBFB462BB95AF3001DEC7B /* PasswordTrailingButton.swift in Sources */,
 				497237942B3403750005D9BC /* LoginVerificationModel.swift in Sources */,
+				49DBFB4A2BB96100001DEC7B /* DeletableTextField.swift in Sources */,
 				49DBFB2D2BB95AC4001DEC7B /* UIView+Extensions.swift in Sources */,
 				49DBFB332BB95AC4001DEC7B /* Material+Extensions.swift in Sources */,
 				497237962B34058C0005D9BC /* OTPVerificationNetworkManager.swift in Sources */,
