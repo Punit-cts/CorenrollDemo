@@ -95,7 +95,9 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate, LoginVie
             
             self?.loadingAlert.dismiss(animated: true) {
                 
-                self?.performSegue(withIdentifier: "instantiate", sender: nil)
+                let vc = UserSelectionViewController()
+                self?.navigationController?.pushViewController(vc, animated: true)
+                
             }
         }
     }
