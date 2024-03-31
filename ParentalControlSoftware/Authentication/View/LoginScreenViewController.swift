@@ -20,35 +20,7 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate, LoginVie
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        let corAttributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.systemBlue,                              //adds the color blue to "COR"
-            .font: UIFont.systemFont(ofSize: 34, weight: .bold)]
-        
-        let enrollAttributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.black,                                   //adds the color black to "ENROLL"
-            .font: UIFont.boldSystemFont(ofSize: 34)]
-        
-        let corString = NSAttributedString(string: "COR", attributes: corAttributes)
-        
-        let enrollString = NSAttributedString(string: "ENROLL", attributes: enrollAttributes)
-        
-        let combinedString = NSMutableAttributedString()
-        combinedString.append(corString)
-        combinedString.append(enrollString)
-        
-        let titleLabel = UILabel()
-        titleLabel.attributedText = combinedString
-        titleLabel.sizeToFit()
-        
-        let leftOffSet: CGFloat = 16
-        titleLabel.frame.origin.x = leftOffSet
-        titleLabel.frame.origin.y = view.safeAreaInsets.bottom + 20
-        titleLabel.frame.size.width = view.bounds.width - leftOffSet        //adjusts the navigation title fo the left side of the screen such that the
-        titleLabel.textAlignment = .left
-        
-        navigationItem.titleView = titleLabel
-        
+
         customTextView.emailTextField.delegate = self
         customPasswordTextView.passwordTextField.delegate = self
         customTextView.emailTextField.becomeFirstResponder()
