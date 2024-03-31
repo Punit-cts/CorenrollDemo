@@ -114,7 +114,7 @@
 			children = (
 				49DBFB212BB95A95001DEC7B /* Authentication */,
 				49076CED2B2703AD00EAD0C2 /* Delegates */,
-				49DBFB352BB95AE7001DEC7B /* UserViews */,
+				49DBFB352BB95AE7001DEC7B /* UserSelectionViews */,
 				49DBFB222BB95AC4001DEC7B /* Helpers */,
 				49DBFB422BB95AF3001DEC7B /* Custom View */,
 				49076CE22B27039F00EAD0C2 /* Assets.xcassets */,
@@ -205,7 +205,7 @@
 			path = ../../ParentalControl/ParentalControl/Helpers;
 			sourceTree = "<group>";
 		};
-		49DBFB352BB95AE7001DEC7B /* UserViews */ = {
+		49DBFB352BB95AE7001DEC7B /* UserSelectionViews */ = {
 			isa = PBXGroup;
 			children = (
 				49DBFB362BB95AE7001DEC7B /* UserSelectionViewController.swift */,
@@ -215,8 +215,8 @@
 				49DBFB3A2BB95AE7001DEC7B /* UserSelectionViewController.xib */,
 				49DBFB3B2BB95AE7001DEC7B /* UserParentSelectionView.xib */,
 			);
-			name = UserViews;
-			path = ../../ParentalControl/ParentalControl/UserViews;
+			name = UserSelectionViews;
+			path = ../../ParentalControl/ParentalControl/UserSelectionViews;
 			sourceTree = "<group>";
 		};
 		49DBFB422BB95AF3001DEC7B /* Custom View */ = {
