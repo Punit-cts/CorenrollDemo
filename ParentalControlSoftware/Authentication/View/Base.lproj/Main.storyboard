@@ -44,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfl-O8-VyY" customClass="CustomEmailTextField" customModule="ParentalControlSoftware" customModuleProvider="target">
-                                <rect key="frame" x="26" y="342" width="341" height="65"/>
+                                <rect key="frame" x="15" y="342" width="363" height="65"/>
                                 <color key="backgroundColor" red="0.81346767070000003" green="0.99063362880000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="DLe-nG-Gdi"/>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiE-kc-OaU" customClass="CustomPasswordTextField" customModule="ParentalControlSoftware" customModuleProvider="target">
-                                <rect key="frame" x="26" y="415" width="341" height="68"/>
+                                <rect key="frame" x="15" y="415" width="363" height="68"/>
                                 <color key="backgroundColor" red="0.81346767070000003" green="0.99063362880000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="No9-Nv-kbj"/>
@@ -82,13 +82,13 @@
                             <constraint firstItem="X6g-l2-BDc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="Phc-gR-nSr"/>
                             <constraint firstItem="31v-4z-Oqi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="UV7-F6-7cN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mHt-L2-ILX" secondAttribute="trailing" constant="175" id="bBj-GK-3hd"/>
-                            <constraint firstItem="Xfl-O8-VyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="d8w-Eu-35r"/>
-                            <constraint firstItem="KiE-kc-OaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="dRA-vB-gQf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KiE-kc-OaU" secondAttribute="trailing" constant="26" id="fwf-td-7iz"/>
+                            <constraint firstItem="Xfl-O8-VyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="d8w-Eu-35r"/>
+                            <constraint firstItem="KiE-kc-OaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="dRA-vB-gQf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KiE-kc-OaU" secondAttribute="trailing" constant="15" id="fwf-td-7iz"/>
                             <constraint firstItem="ln5-8N-XHC" firstAttribute="top" secondItem="X6g-l2-BDc" secondAttribute="bottom" constant="8" symbolic="YES" id="kzu-5m-SxP"/>
                             <constraint firstItem="Xfl-O8-VyY" firstAttribute="top" secondItem="ln5-8N-XHC" secondAttribute="bottom" constant="37" id="mh4-OI-AOZ"/>
                             <constraint firstItem="mHt-L2-ILX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="p0r-Kp-2YY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xfl-O8-VyY" secondAttribute="trailing" constant="26" id="rII-j1-QYP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xfl-O8-VyY" secondAttribute="trailing" constant="15" id="rII-j1-QYP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X6g-l2-BDc" secondAttribute="trailing" constant="26" id="yAD-qP-c5T"/>
                         </constraints>
                     </view>

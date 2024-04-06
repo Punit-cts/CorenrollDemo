@@ -9,13 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardStatsView" customModule="ParentalControlSoftware" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParentDashboardStatsView" customModule="ParentalControlSoftware" customModuleProvider="target">
             <connections>
                 <outlet property="childNameLabel" destination="Tgn-At-L0D" id="DaM-NC-bGO"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="NQ6-Dt-da3"/>
-                <outlet property="noOfDevicesLabe" destination="IBm-Nz-RLq" id="D0N-bT-woR"/>
-                <outlet property="noofAlertsLabel" destination="wXk-mF-959" id="8Ge-2V-Ry3"/>
-                <outlet property="noofDevicesLabe" destination="IBm-Nz-RLq" id="kBn-qI-vBv"/>
+                <outlet property="noOfAlertsLabel" destination="wXk-mF-959" id="WHJ-TQ-EBZ"/>
+                <outlet property="noOfDevicesLabel" destination="IBm-Nz-RLq" id="KLX-A7-JxS"/>
                 <outlet property="screenTimeLabel" destination="oad-9V-kMt" id="yTv-6K-DWK"/>
             </connections>
         </placeholder>

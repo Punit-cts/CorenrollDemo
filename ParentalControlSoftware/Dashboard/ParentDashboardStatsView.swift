@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DashboardStatsView: UIView {
+class ParentDashboardStatsView: UIView {
     
     @IBOutlet weak var contentView: UIView!
     
